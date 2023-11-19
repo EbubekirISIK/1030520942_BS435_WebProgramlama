@@ -71,13 +71,13 @@ const kontrolEt = () =>
             ReactDOM.render(<Bar/>, document.getElementById("q"));
 
         } else if (tahmin < sayi) {
-            alert('Daha yüksek bir sayı deneyin.');
+            alert('Daha yüksek sayı tahmin etmelisin.');
             ReactDOM.render(<Resim />, document.getElementById("resim"));
             kalanHak -=1;
             ReactDOM.render(<As/>, document.getElementById("a"));
             ReactDOM.render(<Bar/>, document.getElementById("q"));
         } else {
-            alert('Daha düşük bir sayı deneyin.');
+            alert('Daha düşük sayı tahmin etmelisin.');
             ReactDOM.render(<Resim />, document.getElementById("resim"));
             kalanHak -=1;
             ReactDOM.render(<As/>, document.getElementById("a"));
