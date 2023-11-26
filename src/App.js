@@ -89,14 +89,8 @@ function App() {
 
             <Resimler resim={asmaca} />
 
-
-
-
-
         </div>
     );
 }
 
 export default App;
-
-

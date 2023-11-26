@@ -5,5 +5,8 @@
 }
 .yardimciBar{
     width: 30%;
-    margin: auto;
+    margin: 50px auto;
+}
+.row {
+    --bs-gutter-x: 0 !important;
 }
