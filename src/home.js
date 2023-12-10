@@ -1,16 +1,22 @@
+import './App.css';
 import {Button, DropdownDivider} from "react-bootstrap";
+
 import React from "react";
 import {Link} from "react-router-dom";
 
 export const Home = () => {
     return(
-        <div>
-            <div>
-                bir oyun seç
-            </div>
+        <div className={"homeClass"}>
 
-            <Link to={"/adamasmaca"}>oyna</Link>
-            <Link to={"/oyuniki"}>oyna 2</Link>
+            <h1>
+                bir oyun seç
+            </h1>
+            <div className={"oyun-sec"}>
+                <Link className={"link"} to={"/adamasmaca"}>Adam Asmaca</Link>
+            </div>
+            <div className={"oyun-sec"}>
+                <Link className={"link"} to={"/oyuniki"}>Sayı Sırlarının Peşinde </Link>
+            </div>
         </div>
     );
 }

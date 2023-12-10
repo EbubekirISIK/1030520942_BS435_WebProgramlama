@@ -109,7 +109,7 @@ export const Adamasmaca = () => {
                 <Row>
                     <Col>
                         <div className={"yardimciBar"}>
-                            <ProgressBar>
+                            <ProgressBar style={{backgroundColor: "yellow"}}>
                                 <ProgressBar striped variant="warning" now={sayi} key={1} />
                             </ProgressBar>
                         </div>
