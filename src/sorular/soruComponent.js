@@ -55,7 +55,7 @@ const SoruComponent = ({alan, soru, onChange, value, cevap, onClick, basamakSayi
                             </Alert></div>) : (<span></span>)}
 
 
-                            
+
                             {ipucuA ? (asalSayi ?
 
                                 (<div style={{padding: "5px 25px"}}><Alert  key={"light"} variant={"light"}>
