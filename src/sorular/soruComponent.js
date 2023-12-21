@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Alert, Button, Col, Container, Row} from "react-bootstrap";
+import {Alert, Button, Col, Container, Modal, Row} from "react-bootstrap";
 
 const isAsal = (sayi) => {
     if (sayi < 2) {
@@ -12,46 +12,55 @@ const isAsal = (sayi) => {
     }
     return true;
 };
-const SoruComponent = ({alan, soru, onChange, value, cevap, onClick, basamakSayisiniGor, rakamToplaminiGor, asalSayiOgren,ipucuB, ipucuR, ipucuA, dogruMu }) => {
-
+const SoruComponent = ({alan, soru, onChange, value, cevap, onClick, basamakSayisiniGor, rakamToplaminiGor,sure, asalSayiOgren,ipucuB, ipucuR, ipucuA, dogruMu, show, handleClose}) => {
+console.log(show)
     const valueStr = cevap.toString();
     const basamakSayisi = valueStr.length;
     const rakamlarToplami = valueStr.split('').reduce((acc, digit) => acc + parseInt(digit, 10), 0);
     const sonBasamak = parseInt(valueStr.charAt(valueStr.length - 1), 10);
     const asalSayi = isAsal(sonBasamak);
     return (
+
         <div>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Devam Et!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className={"modalBody"} >
+                        <p>{sure}</p>
+                </Modal.Body>
+            </Modal>
             <h2 style={{textAlign:"start"}}>{alan}</h2>
             <Container>
                 <Row>
                     <Col>
                         <h2 style={{textAlign:"center"}}>{soru}</h2>
-                        <div className={"jokerler"}>
-                            <Button onClick={basamakSayisiniGor} >basam sayısını öğren</Button>
-
-                            <Button onClick={rakamToplaminiGor}>sayının rakamları toplamını ögren</Button>
-
-                            <Button onClick={asalSayiOgren}>asal sayı ögren</Button>
-
-                        </div>
-
 
 
                         <input type="number" onChange={onChange} value={value} />
                         <Button variant={"success"} onClick={onClick}  disabled={dogruMu}>
                             Tahmin Et
                         </Button>
-                        {dogruMu ? (<p>Tebrikler, doğru tahmin! Yeni bir soruyla devam edin.</p>) : (<p>merhaba</p>)}
+
                     </Col>
                     <Col>
-                        <div  style={{margin:"auto",fontSize:"20px", fontWeight:600, color:"blue", backgroundColor:"#FF6969", width:"75%", borderRadius:"20px",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;"}}>
+
+                        <div  style={{margin:"auto",fontSize:"20px", fontWeight:600, color:"blue", backgroundColor:"#FF6969", width:"75%", borderRadius:"20px",boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}}>
                             <div style={{color:"#FDE5D4", backgroundColor: "#001524",textAlign:"center", fontSize:"30px", marginBottom:"20px"}}>İpucular</div>
+                            <div className={"jokerler"}>
+                                <Button onClick={basamakSayisiniGor} >basam sayısını öğren</Button>
+
+                                <Button onClick={rakamToplaminiGor}>sayının rakamları toplamını ögren</Button>
+
+                                <Button onClick={asalSayiOgren}>asal sayı ögren</Button>
+
+                            </div>
                             {ipucuB ? (<div style={{padding: "5px 25px"}}><Alert  key={"light"} variant={"light"}>
-                                Sayının basamak sayısı:{basamakSayisi}
+                                Sayının basamak sayısı: {basamakSayisi}
                             </Alert></div>) : (<span></span>)}
 
                             {ipucuR ? (<div style={{padding: "5px 25px"}}><Alert  key={"light"} variant={"light"}>
-                                Sayının basamak sayısı:{rakamlarToplami}
+                                Sayının rakamları toplamı: {rakamlarToplami}
                             </Alert></div>) : (<span></span>)}
 
 

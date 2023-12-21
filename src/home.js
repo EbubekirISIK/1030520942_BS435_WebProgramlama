@@ -20,14 +20,6 @@ export const Home = () => {
                 <Link className={"link"} to={"/oyuniki"}>Sayı Sırlarının Peşinde </Link>
             </div>
 
-        <div>
-            <div>
-                bir oyun seç
-            </div>
-            <Link to={"/adamasmaca"}>oyna</Link>
-            <Link to={"/oyuniki"}>oyna 2</Link>
-
-        </div>
         </div>
     );
 }
