@@ -138,23 +138,191 @@ const bilim = [
     {
         question: "İnsan vücudundaki kaç temel amino asit bulunmaktadır",
         answers: 20,
+    },
+    {
+        question: "İnsan vücudundaki kaç kemik bulunmaktadır",
+        answers: 206,
+    },
+    {
+        question: "Bir litre suyun kütlesi kaç gramdır",
+        answers: 1000 ,
+    },
+    {
+        question: "Bir ahtapotun kaç kalbi vardır",
+        answers: 3,
+    },
+    {
+        question: "Yetişkin bir insanın kaç dişi vardır",
+        answers: 32,
+    },
+    {
+        question: "Güneş ışığının Dünya'ya ulaşması yaklaşık olarak kaç dakka sürer",
+        answers: 8,
+    },
+    {
+        question: "Celsius ve Fahrenheit hangi sıcaklıkta eşittir",
+        answers: 40,
+    },
+    {
+        question: "İlk insan aya hangi yılda ayak bastı",
+        answers: 1969,
+    },
+    {
+        question: "Ay’ın yüzeyindeki yer çekimi ivmesi, Dünya’daki yer çekimi ivmesinin yaklaşık olarak kaçta biridir",
+        answers: 6,
+    },
+    {
+        question: "İnsan vücudunda kaç çift kromozom bulunur",
+        answers: 23,
+    },
+    {
+        question: "Bir saatte kaç saniye vardır",
+        answers: 3600,
+    },
+    {
+        question: "Bir dönüm, kaç metrekareye eşittir",
+        answers: 1000,
     }
 
 ];
 
 const spor = [
     {
-        question: "spor buluş",
-        answers: 1923,
+        question: "Erkeklerde en ağır halter kaldırma rekoru nedir",
+        answers: 263,
     },
     {
-        question: "spor  bak",
+        question: "Bir futbol maçında saha da toplam kaç oyuncu sahada bulunur",
+        answers: 22,
+    },
+    {
+        question: "Bir voleybol maçında saha da toplam kaç oyuncu sahada bulunur",
+        answers: 24,
+    },
+    {
+        question: "Bir baskebol maçında saha da toplam kaç oyuncu sahada bulunur",
+        answers: 10,
+    },
+    {
+        question: "Fenerbahçe klübünün kuruluş yılı nedir",
         answers: 1907,
     },
     {
-        question: "spor ne",
-        answers: 1987,
+        question: "Galatasaray klübünün kuruluş yılı nedir",
+        answers: 1905,
     },
+    {
+        question: "Beşiktaş klübünün kuruluş yılı nedir",
+        answers: 1903,
+    },
+    {
+        question: "Real Madrid, UEFA Şampiyonlar Ligi'ni kaç kez kazanmıştır",
+        answers: 14,
+    },
+    {
+        question: "Dünya Kupası tarihinde en çok gol atan Miroslav Klose kaç gol atmıştır",
+        answers: 16,
+    },
+    {
+        question: "Bir futbol maçında oyuncular kaçar dakikalık devre araları yaparlar",
+        answers: 16,
+    },
+    {
+        question: "FC Barcelona futbol kulübü tarihinde kaç kez La Liga şampiyonluğu yaşamıştır",
+        answers: 26,
+    },
+    {
+        question: "Cristiano Ronaldo'nun Juventus'tan Manchester United'a transferinde ödenen toplam transfer bedeli kaç milyon eurodur",
+        answers: 15,
+    },
+    {
+        question: "Bir sezonda en çok gol atan Josef Bican kaç gol atmıştır",
+        answers: 68,
+    },
+    {
+        question: " Brezilya Milli Futbol Takımı, FIFA Dünya Kupası'nı kaç kez kazanmıştır",
+        answers: 5,
+    },
+    {
+        question: "Bir futbolcunun en yaşlı gol atan oyuncu rekoru kaç yaşındadır",
+        answers: 50,
+    },
+    {
+        question: "Bir futbolcunun transferinde ödenen en yüksek miktar kaç milyon eurodur",
+        answers: 222,
+    },
+    {
+        question: "Bir futbolcunun yıllık maaşının en fazla olduğu dönemdeki miktar nedir",
+        answers: 130,
+    },
+    {
+        question: "Bir sezon içinde UEFA Şampiyonlar Ligi'nde en fazla gol atan oyuncuya verilen Altın Ayakkabı ödülünü kazanan oyuncunun attığı gol sayısı nedir",
+        answers: 17,
+    },
+    {
+        question: "FC Barcelona futbol kulübü ne zaman kurulmuştur",
+        answers: 1899,
+    },
+    {
+        question: "Juventus futbol kulübü tarihinde kaç kez Serie A şampiyonluğu yaşamıştır",
+        answers: 36,
+    },
+    {
+        question: "Almanya Milli Futbol Takımı, FIFA Dünya Kupası'nı kaç kez kazanmıştır",
+        answers: 4,
+    },
+    {
+        question: "Fenerbahçe'nin yeni transferi Dusan Tadic bir sezonda en fazla asist yaptığı rekor kaçtır?",
+        answers: 37,
+    },
+    {
+        question: "UEFA Şampiyonlar Ligi tarihinde bir sezon içinde en fazla gol atan barcelona kaç gol atmıştır?",
+        answers: 45,
+    },
+    {
+        question: "Real Madrid futbol kulübü ne zaman kurulmuştur",
+        answers: 1902,
+    },
+    {
+        question: "İlk FIFA Dünya Kupası ne zaman düzenlenmiştir",
+        answers: 1930,
+    },
+    {
+        question: "NBA maçlarında bir oyuncunun attığı en yüksek sayı sayısı nedir",
+        answers: 100,
+    },
+    {
+        question: "Boston Celtics basketbol takımı toplamda kaç NBA şampiyonluğu yaşamıştır",
+        answers: 17,
+    },
+    {
+        question: "NBA Finalleri'nde bir oyuncunun attığı en yüksek sayı sayısı nedir",
+        answers: 41,
+    },
+    {
+        question: "Michael Jordan, NBA kariyeri boyunca kaç kez NBA şampiyonluğu yaşamıştır",
+        answers: 6,
+    },
+    {
+        question: "NBA tarihinde bir oyuncunun kariyer üçlük atış yüzdesi en yüksek olan Steve Kerr'in yüzdesi nedir",
+        answers: 45,
+    },
+    {
+        question: "Fenerbahçe Basketbol Takımı, EuroLeague'de 2010-2011 sezonundan itibaren 2022-2023 sezonu sonuna kadar kaç kez Final Four'a katılmıştır",
+        answers: 9,
+    },
+    {
+        question: " Fenerbahçe'nin EuroLeague'de en uzun galibiyet serisi kaç maçtır",
+        answers: 12,
+    },
+    {
+        question: "Fenerbahçe Basketbol Takımı, EuroLeague'de şampiyonluk yaşadığı yıl hangisidir?",
+        answers: 2017,
+    },
+    {
+        question: "Voleybol Dünya Şampiyonası tarihinde bir oyuncunun bir turnuvada attığı en yüksek sayı sayısı nedir",
+        answers: 34,
+    }
 
 ];
 

@@ -45,6 +45,11 @@ export const Oyuniki = ()=>{
             question:sporQuiz.question,
             answers: sporQuiz.answers,
         },
+        {
+            alan: "GameOver",
+            question:"a",
+            answers: 1,
+        },
         // Daha fazla tarih sorusu ekleyebilirsiniz...
     ];
     useEffect(() => {
@@ -62,10 +67,10 @@ export const Oyuniki = ()=>{
 
     const kontrol = () => {
         if (sayac >0 && parseInt(tahmin) === sayi){
-            setskor(skor + 1000);
+            setskor(skor + 2500);
             setDogruMu(true);
             setIlk(false);
-            setSure("Tebrikler Doğru cevap! +1000 puan")
+            setSure("Tebrikler Doğru cevap! +2500 puan")
 
         }else{
             setskor(skor - 2000);
@@ -90,12 +95,12 @@ export const Oyuniki = ()=>{
         const dogruCevap = sorular[aktifSoruIndex].answers;
         if (parseInt(tahmin) === dogruCevap) {
             setAktifSoruIndex(aktifSoruIndex + 1);
-            setskor(skor + 1000);
+            setskor(skor + 2500);
             setBasamak(false);
             setRakamToplam(false);
             setAsalSayi(false)
             setDogruMu(true);
-            setSure("Tebrikler Doğru cevap! +1000 puan")
+            setSure("Tebrikler Doğru cevap! +2500 puan")
         } else {
             setskor(skor - 2000);
             setAktifSoruIndex(aktifSoruIndex + 1);
@@ -120,7 +125,7 @@ export const Oyuniki = ()=>{
         setskor(skor-200)
     }
     return (
-        <div>
+        <div style={{height:"100%"}}>
             <div style={{textAlign:"end", fontSize:"30px", fontWeight:600, color:"#0f0"}}><strong>Puan:</strong> {skor}</div>
             {ilk && sayac > 0 ?
                 (<MatematikSorusu
@@ -149,6 +154,7 @@ export const Oyuniki = ()=>{
                 show={dogruMu}
                 handleClose = {handleClose}
                 sure = {sure}
+                score = {skor}
             />)
 
             }

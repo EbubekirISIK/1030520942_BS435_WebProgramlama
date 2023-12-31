@@ -5,17 +5,18 @@ export const MatematikSorusu = ({onChange, value, onClick, sayi1, sayi2,sayac}) 
 
     return (
         <div>
+            <h2 style={{textAlign:"start", color:"#FF6969"}}>soru 1 : matematik</h2>
             <Container>
                 <Row>
-                    <Col>
-                        <h2 style={{textAlign:"center"}}>soru 1 : matematik</h2>
+                    <Col style={{textAlign:"center"}}>
+
                         <div>
-                            <span><strong>{sayi1} * {sayi2}</strong> işleminin sonucu kaçtır?</span>
+                            <h2><strong>{sayi1} * {sayi2}</strong> işleminin sonucu kaçtır?</h2>
                         </div>
 
-                        <input type="number" onChange={onChange} value={value}/>
+                        <input type="number" style={{height:"50px", width:"75%", border:"1px solid black", borderRadius:"15px", marginTop:"10px"}} onChange={onChange} value={value}/>
                         <br />
-                        <Button variant={"success"}  onClick={onClick}>
+                        <Button variant={"success"} style={{marginTop:"10px"}} onClick={onClick}>
                             Tahmin Et
                         </Button>
 
